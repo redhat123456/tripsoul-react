@@ -1,0 +1,18 @@
+/* 途灵 TripSoul 应用级样式（组件样式以 Tailwind 为主） */
+
+/* 黑夜模式：地图底图反色适配
+   说明：腾讯地图自定义暗色样式需单独在控制台开通，这里用 CSS 滤镜实现：
+   invert 反色后 hue-rotate(180deg) 即可把色调旋回原色，地图由白转暗而标记配色基本不变 */
+.map-night {
+  filter: invert(0.92) hue-rotate(180deg) brightness(0.95) saturate(0.72) contrast(1.05);
+  transition: filter 0.3s ease;
+}
+
+/* 面板滚动条 */
+aside ::-webkit-scrollbar {
+  width: 6px;
+}
+aside ::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}

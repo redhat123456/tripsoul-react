@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AD%3C/text%3E%3C/svg%3E"
+    />
+    <title>途灵 TripSoul · AI 互动旅行规划器</title>
+    <!--
+      地图密钥配置：
+      · VITE_TMAP_KEY 由 GitHub Actions 从仓库 Secrets 注入（Vite 会把 %VAR% 替换成真实值）
+      · 未配置时使用 WorkBuddy 本地密钥代理，前端零密钥
+      说明：在 GitHub 部署的公开页面上使用腾讯地图，请在 https://lbs.qq.com/dev/console/key/manage
+      自行申请 Key，并配置到仓库 Secrets / .env.local 的 VITE_TMAP_KEY
+    -->
+    <script type="text/javascript">
+      window.__TMAP_KEY__ = '%VITE_TMAP_KEY%';
+      window.__TMAP_PROXY__ = 'http://127.0.0.1:__WB_HTTP_PORT__/_TMapService/_wbt/__WB_TMAP_SECRET__';
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
