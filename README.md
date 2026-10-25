@@ -2,13 +2,44 @@
 
 React + TypeScript + Vite + Tailwind CSS 构建的地图 × AI 旅行规划器，支持黑夜模式、「关于」弹窗，并配置了 GitHub Actions 自动构建部署到 GitHub Pages。
 
+React + TypeScript + Vite + Tailwind CSS 构建的地图 × AI 旅行规划器，**基于 WorkBuddy 辅助开发**，支持亮色/黑夜双主题切换、「关于」弹窗，内置行程智能规划算法，并配置 GitHub Actions 自动构建部署。
+
+项目在线地址：https://tanger.ltd/tripsoul-react/
+
+<table width="100%">
+<tr>
+<td align="center" width="50%">
+<img src="./image/1.png" width="90%">
+<br>
+<em>Figure 1: TripSoul 亮色主题主界面</em>
+</td>
+<td align="center" width="50%">
+<img src="./image/2.png" width="90%">
+<br>
+<em>Figure 2: TripSoul 黑夜主题主界面</em>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<img src="./image/3.png" width="90%">
+<br>
+<em>Figure 3: TripSoul 黑夜模式「关于」弹窗</em>
+</td>
+<td align="center" width="50%">
+<img src="./image/4.png" width="90%">
+<br>
+<em>Figure 4: TripSoul 亮色模式「关于」弹窗</em>
+</td>
+</tr>
+</table>
+
 ## 本地开发
 
 ```bash
 npm install
-npm run dev      # 本地热更新 http://localhost:5173
-npm run build    # 构建产物输出到 dist/
-npm run preview  # 预览构建产物
+npm run dev     # 本地热更新 http://localhost:5173
+npm run build   # 构建产物输出到 dist/
+npm run preview # 预览构建产物
 ```
 
 ## 自动部署（GitHub Pages）
